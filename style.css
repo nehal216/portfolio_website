@@ -1,0 +1,394 @@
+/* ==============================
+   General
+   ============================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1f2428;
+    color: #f5f5f5;
+    margin: 0;
+}
+
+
+/* ==============================
+   Navigation
+   ============================== */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #6ea8fe !important;
+}
+
+
+/* ==============================
+   Hero Section
+   ============================== */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #1f2428,
+        #303841
+    );
+}
+
+.intro-text {
+    color: #6ea8fe;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-section h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-section h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #d6d6d6;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 600px;
+    color: #bfc5ca;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+    padding: 12px 25px;
+}
+
+
+/* ==============================
+   Profile Card
+   ============================== */
+
+.profile-card {
+    background-color: #272d32;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.profile-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #6ea8fe;
+    color: #1f2428;
+    font-size: 5rem;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 25px;
+}
+
+
+/* ==============================
+   General Pages
+   ============================== */
+
+.page-section {
+    padding: 130px 0 80px;
+    min-height: 100vh;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.section-heading h1,
+.section-heading h2 {
+    font-weight: 700;
+}
+
+.section-heading > p:last-child {
+    color: #bfc5ca;
+    max-width: 700px;
+    margin: 15px auto 0;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   About
+   ============================== */
+
+.about-box {
+    background-color: #272d32;
+    padding: 35px;
+    border-radius: 15px;
+    border-left: 4px solid #6ea8fe;
+}
+
+.about-box h3 {
+    margin-bottom: 20px;
+}
+
+.about-box li {
+    margin-bottom: 12px;
+    color: #c8cdd1;
+}
+
+
+/* ==============================
+   Skills
+   ============================== */
+
+.skills-section {
+    padding: 80px 0;
+    background-color: #272d32;
+}
+
+.skill-card {
+    height: 100%;
+    padding: 30px;
+    background-color: #1f2428;
+    border-radius: 15px;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.skill-card h3 {
+    color: #6ea8fe;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   Projects
+   ============================== */
+
+.project-card {
+    height: 100%;
+    padding: 30px;
+    background-color: #272d32;
+    border-radius: 15px;
+    border: 1px solid #3c444b;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #6ea8fe;
+}
+
+.project-card h2 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+.project-card p {
+    color: #bfc5ca;
+    line-height: 1.7;
+}
+
+.project-number {
+    font-size: 1.2rem;
+    color: #6ea8fe;
+    font-weight: 700;
+}
+
+.project-tags {
+    margin-top: 25px;
+}
+
+.project-tags span {
+    display: inline-block;
+    background-color: #343b42;
+    padding: 6px 10px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+
+/* ==============================
+   Contact
+   ============================== */
+
+.contact-form {
+    background-color: #272d32;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control {
+    background-color: #1f2428;
+    border: 1px solid #454d55;
+    color: white;
+    padding: 12px;
+}
+
+.form-control::placeholder {
+    color: #8f989f;
+}
+
+.form-control:focus {
+    background-color: #1f2428;
+    color: white;
+    border-color: #6ea8fe;
+    box-shadow: none;
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #171b1e;
+
+    padding: 25px;
+
+    color: #8f989f;
+}
+
+.site-footer p {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.site-footer .material-symbols-outlined {
+    font-size: 24px;
+    line-height: 1;
+}
+
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 767px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        margin-top: 25px;
+    }
+
+    .hero-buttons .btn {
+        margin-right: 5px;
+        margin-bottom: 10px;
+        padding: 10px 18px;
+    }
+
+    .profile-card {
+        margin-top: 40px;
+        padding: 40px 20px;
+    }
+
+    .profile-circle {
+        width: 130px;
+        height: 130px;
+        font-size: 4rem;
+    }
+
+    .page-section {
+        padding: 110px 0 60px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+}
+
+
+/* ==============================
+   Extra Small Screens
+   ============================== */
+
+@media (max-width: 480px) {
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.15rem;
+    }
+
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+}
