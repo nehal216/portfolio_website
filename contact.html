@@ -21,7 +21,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     >
-    
+
     <!-- Google Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
@@ -51,7 +51,6 @@
                 MyWeb
             </a>
 
-
             <button
                 class="navbar-toggler"
                 type="button"
@@ -63,7 +62,6 @@
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-
 
             <div class="collapse navbar-collapse" id="navbarNav">
 
@@ -150,6 +148,7 @@
                                     type="text"
                                     class="form-control"
                                     id="name"
+                                    name="name"
                                     placeholder="Enter your name"
                                     required
                                 >
@@ -171,7 +170,30 @@
                                     type="email"
                                     class="form-control"
                                     id="email"
+                                    name="email"
                                     placeholder="Enter your email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Subject -->
+                            <div class="mb-3">
+
+                                <label
+                                    for="subject"
+                                    class="form-label"
+                                >
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Enter subject"
                                     required
                                 >
 
@@ -191,6 +213,7 @@
                                 <textarea
                                     class="form-control"
                                     id="message"
+                                    name="message"
                                     rows="6"
                                     placeholder="Write your message"
                                     required
@@ -203,9 +226,18 @@
                             <button
                                 type="submit"
                                 class="btn btn-primary"
+                                id="submitButton"
                             >
                                 Send Message
                             </button>
+
+
+                            <!-- Status Message -->
+                            <div
+                                id="formStatus"
+                                class="mt-3"
+                                role="alert"
+                            ></div>
 
                         </form>
 
@@ -242,6 +274,11 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"
     ></script>
+
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
