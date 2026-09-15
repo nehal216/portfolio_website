@@ -418,6 +418,33 @@ body {
     font-size: 0.8rem;
 }
 
+.project-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.learn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6ea8fe;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.learn-more i {
+    transition: transform 0.3s;
+}
+
+.learn-more:hover {
+    color: #8bb9ff;
+}
+
+.learn-more:hover i {
+    transform: translateX(5px);
+}
 
 /* ==============================
    Contact
@@ -587,6 +614,245 @@ body {
 
     .education-content h3 {
         font-size: 1.2rem;
+    }
+
+}
+
+/* ========================================
+   Project Detail Page
+======================================== */
+
+.project-detail-section {
+    padding: 120px 0 80px;
+    background-color: #272d32;
+    min-height: 100vh;
+}
+
+.project-detail-header {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-detail-header h1 {
+    color: #f5f5f5;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.project-tagline {
+    color: #bfc5ca;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background-color: #3a3030;
+    color: #ffc107;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.project-github {
+    margin-top: 30px;
+}
+
+.project-github .btn {
+    padding: 10px 22px;
+}
+
+
+/* ========================================
+   Project Information
+======================================== */
+
+.project-info-section {
+    max-width: 900px;
+    margin: 70px auto 0;
+}
+
+.project-info-section h2 {
+    color: #6ea8fe;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.project-info-section > p {
+    color: #bfc5ca;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+
+/* ========================================
+   Technologies
+======================================== */
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.technology-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #1f2428;
+    border: 1px solid #3a4147;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.technology-badge i {
+    font-size: 1.5rem;
+}
+
+
+/* ========================================
+   Feature Cards
+======================================== */
+
+.feature-card {
+    height: 100%;
+    padding: 28px;
+    background-color: #1f2428;
+    border-radius: 15px;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.feature-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.feature-heading i {
+    color: #6ea8fe;
+    font-size: 2rem;
+}
+
+.feature-heading h3 {
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.feature-card p {
+    color: #bfc5ca;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   Project Screenshots
+======================================== */
+
+.project-screenshots {
+    align-items: flex-start;
+}
+
+.screenshot-card {
+    padding: 15px;
+    background-color: #1f2428;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.screenshot-card img {
+    display: block;
+    width: 100%;
+    max-height: 700px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.screenshot-card p {
+    color: #bfc5ca;
+    margin: 15px 0 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   Back Button
+======================================== */
+
+.project-back-button {
+    margin-top: 60px;
+}
+
+.project-back-button .btn {
+    padding: 10px 22px;
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 768px) {
+
+    .project-detail-section {
+        padding: 100px 0 60px;
+    }
+
+    .project-detail-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .project-tagline {
+        font-size: 1rem;
+    }
+
+    .project-info-section {
+        margin-top: 50px;
+    }
+
+    .project-info-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .project-detail-header h1 {
+        font-size: 2rem;
+    }
+
+    .technology-list {
+        gap: 10px;
+    }
+
+    .technology-badge {
+        padding: 10px 15px;
     }
 
 }
