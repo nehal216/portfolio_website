@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Search Engine | Nehal</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Devicon -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="../index.html">
+                MyWeb
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Project Details -->
+    <section class="project-detail-section">
+
+        <div class="container">
+
+            <!-- Header -->
+            <div class="project-detail-header text-center">
+
+                <h1>Custom Search Engine</h1>
+
+                <p class="project-tagline">
+                    A Python-based AI-powered search engine that retrieves
+                    web information, generates concise answers, maintains
+                    conversation context, and provides validated source citations.
+                </p>
+
+                <span class="project-status">
+                    <i class="bi bi-check-circle-fill"></i>
+                    Completed
+                </span>
+
+                <div class="project-github">
+
+                    <a
+                        href="https://github.com/nehal216/custom-search-engine"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        <i class="bi bi-github"></i>
+                        View on GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project Overview -->
+            <div class="project-info-section">
+
+                <h2>Project Overview</h2>
+
+                <p>
+                    Custom Search Engine is a Python-based search application
+                    designed to combine web search with AI-generated answers.
+                    The system retrieves relevant information from the web,
+                    processes and ranks the search results, and then uses an
+                    LLM to generate a concise response based on the retrieved
+                    sources.
+                </p>
+
+                <p>
+                    The project follows a Retrieval-Augmented Generation
+                    approach. It also supports conversation memory and
+                    intelligent query rewriting, allowing follow-up questions
+                    to be understood using previous conversation context.
+                    The final responses include source citations that are
+                    validated against the retrieved search results.
+                </p>
+
+            </div>
+
+
+            <!-- Technologies -->
+            <div class="project-info-section">
+
+                <h2>Technologies Used</h2>
+
+                <div class="technology-list">
+
+                    <div class="technology-badge">
+                        <i class="devicon-python-plain"></i>
+                        Python
+                    </div>
+
+                    <div class="technology-badge">
+                        <i class="bi bi-search"></i>
+                        Tavily
+                    </div>
+
+                    <div class="technology-badge">
+                        <i class="bi bi-cpu"></i>
+                        Groq
+                    </div>
+
+                    <div class="technology-badge">
+                        <i class="bi bi-robot"></i>
+                        GPT-OSS 20B
+                    </div>
+
+                    <div class="technology-badge">
+                        <i class="devicon-pytest-plain"></i>
+                        Pytest
+                    </div>
+
+                    <div class="technology-badge">
+                        <i class="bi bi-terminal"></i>
+                        CLI
+                    </div>
+
+                    <div class="technology-badge">
+                        <i class="devicon-git-plain"></i>
+                        Git
+                    </div>
+
+                    <div class="technology-badge">
+                        <i class="devicon-github-original"></i>
+                        GitHub
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Key Features -->
+            <div class="project-info-section">
+
+                <h2>Key Features</h2>
+
+                <div class="row g-4">
+
+                    <!-- Feature 1 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-globe2"></i>
+                                <h3>Web Search</h3>
+                            </div>
+
+                            <p>
+                                Retrieves relevant information from the web
+                                using the Tavily search API.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 2 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-stars"></i>
+                                <h3>AI-Generated Answers</h3>
+                            </div>
+
+                            <p>
+                                Uses an LLM to generate concise answers from
+                                retrieved search results.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 3 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-chat-dots-fill"></i>
+                                <h3>Conversation Memory</h3>
+                            </div>
+
+                            <p>
+                                Maintains previous conversation context so
+                                follow-up questions can be understood correctly.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 4 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-arrow-repeat"></i>
+                                <h3>Query Rewriting</h3>
+                            </div>
+
+                            <p>
+                                Rewrites contextual follow-up questions into
+                                standalone search queries.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 5 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <h3>Result Ranking</h3>
+                            </div>
+
+                            <p>
+                                Filters and ranks search results based on
+                                relevance, content quality, duplicate URLs,
+                                and query matching.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 6 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-link-45deg"></i>
+                                <h3>Citation Validation</h3>
+                            </div>
+
+                            <p>
+                                Checks generated citations against the actual
+                                retrieved sources before displaying the answer.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 7 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-diagram-3-fill"></i>
+                                <h3>Query Decomposition</h3>
+                            </div>
+
+                            <p>
+                                Handles multi-part questions by identifying
+                                separate but related search queries when appropriate.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 8 -->
+                    <div class="col-md-6">
+
+                        <div class="feature-card">
+
+                            <div class="feature-heading">
+                                <i class="bi bi-shield-check"></i>
+                                <h3>Error Handling</h3>
+                            </div>
+
+                            <p>
+                                Handles search failures, invalid results,
+                                LLM errors, empty responses, and invalid citations
+                                gracefully.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Architecture -->
+            <div class="project-info-section">
+
+                <h2>Search Pipeline</h2>
+
+                <p>
+                    The search engine processes a query through multiple stages.
+                    The query is first analyzed and combined with conversation
+                    context. It can then be rewritten before being sent to
+                    Tavily. Retrieved results are filtered and ranked before
+                    being passed to the LLM. The generated answer is finally
+                    checked for valid citations before being presented to the user.
+                </p>
+
+                <div class="feature-card mt-4">
+
+                    <div class="feature-heading">
+                        <i class="bi bi-diagram-3-fill"></i>
+                        <h3>RAG-Based Architecture</h3>
+                    </div>
+
+                    <p>
+                        User Query → Query Analysis → Conversation Context →
+                        Query Rewriting → Tavily Search → Result Filtering →
+                        Result Ranking → Groq LLM → AI Answer → Citation
+                        Validation → Final Answer + Sources
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Testing -->
+            <div class="project-info-section">
+
+                <h2>Testing</h2>
+
+                <p>
+                    The project includes automated tests using pytest for
+                    important components such as query processing, result
+                    ranking, citation validation, and conversation handling.
+                    This helps verify individual parts of the search pipeline
+                    independently.
+                </p>
+
+            </div>
+
+            <!-- Screenshots -->
+            <div class="project-info-section">
+
+                <h2>Screenshots</h2>
+
+                <div class="row g-4 project-screenshots">
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="screenshot-card">
+                            <img
+                                src="../images/projects/custom-search-engine/search.png"
+                                alt="Custom Search Engine search and query processing"
+                            >
+                            <p>Search & Query Processing</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="screenshot-card">
+                            <img
+                                src="../images/projects/custom-search-engine/follow-up.png"
+                                alt="Custom Search Engine sources and citations"
+                            >
+                            <p>Sources & Citations</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- What I Learned -->
+            <div class="project-info-section">
+
+                <h2>What I Learned</h2>
+
+                <p>
+                    This project helped me understand how a search and
+                    retrieval pipeline can be combined with large language
+                    models to generate answers from external information.
+                    I also gained practical experience with query processing,
+                    API integration, result ranking, conversation state,
+                    citation validation, error handling, environment
+                    variables, and automated testing in Python.
+                </p>
+
+            </div>
+
+
+            <!-- Back Button -->
+            <div class="project-back-button text-center">
+
+                <a
+                    href="../projects.html"
+                    class="btn btn-outline-light"
+                >
+                    <i class="bi bi-arrow-left"></i>
+                    Back to Projects
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <p>
+                &copy;
+                <span id="year"></span>
+                Nehal. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JS -->
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

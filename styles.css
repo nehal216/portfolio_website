@@ -374,10 +374,14 @@ body {
 
 .project-card {
     height: 100%;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+
     background-color: #272d32;
+    border: 1px solid #3a4147;
     border-radius: 15px;
-    border: 1px solid #3c444b;
 
     transition:
         transform 0.3s,
@@ -419,9 +423,13 @@ body {
 }
 
 .project-card-footer {
+    margin-top: auto;
+    width: 100%;
+
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
+
+    padding-top: 25px;
 }
 
 .learn-more {
